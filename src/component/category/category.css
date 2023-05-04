@@ -1,0 +1,49 @@
+
+
+  
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  /* Style the heading of each card */
+  .card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .card-img {
+    width: 320px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+  }
+  /* Style the paragraph of each card */
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Add a hover effect to the cards */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Set up a grid layout for the cards */
+
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .card-list {
+      grid-template-columns: 1fr;
+    }}
+  
